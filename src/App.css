@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+.app {
+  position: relative;
+}
+.main {
+  padding: 32px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Page link for navigations */
+
+.page_link {
+  margin-bottom: 32px;
+}
+.page_link__active {
+  color: var(--color-pink);
+  margin-bottom: 32px;
+}
+.big-icon {
+  font-size: 24px;
+}
+.angle-sign {
+  margin: 0 8px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Customer registration */
+.customer-reg__navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.customer__vertical-creation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.customer__profile-img {
+  width: 90px;
+  height: auto;  
+  border-radius: 50%;
+}
+.customer__profile-info,
+.customer__profile-address {
+  margin: 0 16px;
+}
+.customer__profile-info {
+  line-height: 28px;
+}
+.vertical-line {
+  border-right: 1px solid var(--color-text-black);
+  height: 80px;
+  margin: 0 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Customer details section */
+.customer_details__navigation .page_link__active,
+.customer_details__location .page_link__active {
+  margin-top: 32px;
+  margin-bottom: 4px;
+}
+.form-select,
+.form-input {
+  width: 420px;
+  outline: 0;
+  border: none;
+  background: none;
+  font-size: 14px;
+  margin-top: 2px;
+  border-bottom: 1.5px solid var(--color-text-black);
+}
+.input-group {
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px;
+}
+.checkbox-group {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+}
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 32px;
+}
+.checkbox__input {
+  display: none;
+}
+.checkbox__box {
+  width: 2.3em;
+  height: 1.3em;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-shrink: 0;
+  margin-right: 8px;
+  border-radius: 3px;
+  border: 2px solid var(--color-text-black);
+  transition: background-color 0.15s, border-color 0.15s;
+}
+.checkbox__box::after {
+  content: "\2714";
+  color: var(--color-pink);
+  transform: scale(0);
+  transition: transform 0.15s;
+}
+.checkbox__input:checked + .checkbox__box {
+  border-color: var(--color-pink);
+}
+.checkbox__input:checked + .checkbox__box::after {
+  transform: scale(1);
+}
+.avana_financial {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.avana_financial .input-group {
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+.customer_details__inputs .form-input {
+  margin-right: 32px;
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Buttons */
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+  margin-bottom: 120px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-group .btn {
+  padding: 12px;
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.btn-save {
+  width: 140px;
+  background: var(--color-blue);
+  color: var(--color-card);
+}
+.btn-cancel {
+  color: var(--color-blue);
+  background: none;
+  padding: 0px;
 }

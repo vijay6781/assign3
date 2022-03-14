@@ -1,0 +1,7 @@
+.footer {
+  background: var(--color-footer);
+  color: var(--color-text-white);
+  font-size: 14px;
+  padding: 8px 40px;
+  background-color: cyan;
+}

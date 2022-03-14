@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  box-shadow: 0 4px 20px rgba(70, 238, 4, 0.5);
+  z-index: 190;
+}
+.header__brand img{
+  height: 39px;
+}
+.header__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header__links a {
+  margin-right: 24px;
+  color: black;
+}
+.header__links img.header__user_profile {
+  width: 28px;
+  border-radius: 4px;
+}
